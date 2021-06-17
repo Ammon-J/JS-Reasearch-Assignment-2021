@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=PT+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">  
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css">
+    <title>Homepage</title>
+</head>
+
+<body>
+    <header id="luxbar" class="luxbar-default">
+        <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
+        <div class="luxbar-menu luxbar-menu-right luxbar-menu-material-bluegrey">
+            <ul class="luxbar-navigation">
+                <li class="luxbar-header">
+                    <a href="index.html" class="luxbar-brand">Ammon Johnson</a>
+                    <label class="luxbar-hamburger luxbar-hamburger-doublespin" 
+                    id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
+                </li>
+                <li class="luxbar-item"><a href="oldVideoGame.html">Cool Pong Animation</a></li>
+                <li class="luxbar-item"><a href="animatedLines.html">Animated Design</a></li>
+                <li class="luxbar-item"><a href="responsiveFireworks.html">Responsive Fireworks</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Alternate: Background Image Parallax -->
+    <div data-jarallax data-parallax="scroll" class="jarallax">
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="header">Welcome</h1>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <div class="left-content">
+                <p>
+                    I used jarallax js library for a cool picture scroll. I also added some cool animations us js libraries.
+
+                </p>
+            </div>
+        </div>
+
+
+        <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="800">
+            <div class="right-content">
+                <p>
+                    Here are some of my favorite cars. All of these pictures are free to use.
+                </p>
+            </div>
+        </div>
+
+
+        <img class="jarallax-img" src="Pictures/V12.jpg" alt="">
+    </div>
+
+    <div data-jarallax data-parallax="scroll" class="jarallax">
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="picture-header">Lamborghini Aventador</h1>
+        </div>
+
+        <img class="jarallax-img" src="Pictures/lamborghini-aventador-desert.jpg" alt="">   
+    </div>
+
+    <div data-jarallax data-parallax="scroll" class="jarallax">
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="picture-header">Lamborghini Sian</h1>
+        </div>
+
+        <img class="jarallax-img" src="Pictures/lamborghini-sian-green.jpg" alt="">   
+    </div>
+
+    <div data-jarallax data-parallax="scroll" class="jarallax">
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="audi-label">Audi R8</h1>
+        </div>
+
+        <img class="jarallax-img" src="Pictures/audi-r8.jpg" alt="">   
+    </div>
+
+    <div data-jarallax data-parallax="scroll" class="jarallax">
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="picture-header">Bugatti Chiron</h1> 
+        </div>
+
+        <img class="jarallax-img" src="Pictures/bugatti-chiron.jpg" alt="">
+    </div>
+    
+    <div data-jarallax data-parallax="scroll" class="jarallax">
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="picture-header">Bugatti Divo</h1> 
+        </div>
+        
+        <img class="jarallax-img" src="Pictures/bugatti-divo.jpg" alt="">
+    </div>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
+    <script>
+        jarallax(document.querySelectorAll('.jarallax'), {
+                onScroll: function(calculations) {
+                console.log(calculations);
+            }   
+        });
+
+        console.log(jarallax(document.querySelectorAll('.jarallax'), 'isVisible'));
+    </script>
+</body>
+
+</html>
